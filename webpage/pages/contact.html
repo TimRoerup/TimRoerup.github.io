@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing. Rörup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="index.html", class="navbar-title">Ingenieurbüro Rörup</a>
+                
+            <nav>
+                <svg class="close" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3145 14L26.5918 4.72263C27.0321 4.28311 27.2798 3.68668 27.2803 3.06455C27.2809 2.44242 27.0343 1.84555 26.5947 1.40525C26.1552 0.964949 25.5588 0.717282 24.9366 0.716733C24.3145 0.716183 23.7177 0.962796 23.2773 1.40232L14 10.6797L4.72266 1.40232C4.28236 0.962019 3.68519 0.714661 3.06251 0.714661C2.43983 0.714661 1.84265 0.962019 1.40235 1.40232C0.96205 1.84262 0.714691 2.4398 0.714691 3.06248C0.714691 3.68516 0.96205 4.28233 1.40235 4.72263L10.6797 14L1.40235 23.2773C0.96205 23.7176 0.714691 24.3148 0.714691 24.9375C0.714691 25.5602 0.96205 26.1573 1.40235 26.5976C1.84265 27.0379 2.43983 27.2853 3.06251 27.2853C3.68519 27.2853 4.28236 27.0379 4.72266 26.5976L14 17.3203L23.2773 26.5976C23.7177 27.0379 24.3148 27.2853 24.9375 27.2853C25.5602 27.2853 26.1574 27.0379 26.5977 26.5976C27.038 26.1573 27.2853 25.5602 27.2853 24.9375C27.2853 24.3148 27.038 23.7176 26.5977 23.2773L17.3145 14Z" fill="black"/>
+                </svg>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>                    
+            </nav>
+            
+            
+            <svg class="menu" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 8H23.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M7 14H23.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M7 20H23.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>  
+        </header>
+    
+
+        <div class="container">
+            <form action="https://formsubmit.co/timroerup@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="Mail Roerup.com!">
+        
+                <label for="fname">Name</label>
+                <input type="text" name="firstname" placeholder="Your name..">
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your email..">
+            
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        const nav = document.querySelector('nav')
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+
+    
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
