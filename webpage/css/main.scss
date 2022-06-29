@@ -1,6 +1,6 @@
 body{
     background: #3C3C3C;
-    margin: 1.5em;
+    margin: 1.5em 0em 0em 0em;
     font-family: 'Poppins', sans-serif;
     color: white;
     max-width: 100%;
@@ -14,12 +14,17 @@ a {
 }
 
 
+div.wrapper{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 header {
     display: flex; // since header contains three elements (title, navbar, menu) it makes 3 columns
     justify-content: space-between;
     align-items: center;
+    margin: 0 1.5em;
 
 
     a {
@@ -68,6 +73,7 @@ header {
 
 section.hero {
     height: 100vh;
+    margin: 0em 1.5em;
     margin-top: 2em;
     
     h1 {
@@ -220,6 +226,11 @@ nav.open-nav{
 
     .menu{
         display: none;
+    }
+
+    div.wrapper{
+        max-width: 100%;
+        overflow-x: unset;
     }
 
 

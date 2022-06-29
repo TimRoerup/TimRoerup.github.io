@@ -1,6 +1,6 @@
 body {
   background: #3C3C3C;
-  margin: 1.5em;
+  margin: 1.5em 0em 0em 0em;
   font-family: 'Poppins', sans-serif;
   color: white;
   max-width: 100%;
@@ -13,6 +13,11 @@ a {
   color: white;
 }
 
+div.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +28,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 1.5em;
 }
 
 header a {
@@ -74,6 +80,7 @@ header nav .close {
 
 section.hero {
   height: 100vh;
+  margin: 0em 1.5em;
   margin-top: 2em;
 }
 
@@ -247,6 +254,10 @@ nav.open-nav {
   }
   .menu {
     display: none;
+  }
+  div.wrapper {
+    max-width: 100%;
+    overflow-x: unset;
   }
   header nav {
     -webkit-transform: translateX(0%);
