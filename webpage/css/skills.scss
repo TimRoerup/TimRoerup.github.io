@@ -399,18 +399,20 @@ section.imprint{
                 position: relative;
                 width: 15px;
                 height: 15px;
-                background: #ff9933;
+                background: #fff;
                 margin: 0 4px;
                 border-radius: 50%;
-                box-shadow: 0 0 0 10px #4e360044, 0 0 50px #ff9933, 0 0 100px #ff9933;
-                animation: animate_background 15s linear infinite;
-                animation-duration: calc(200s / var(--i));
+                box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
+                animation: animate_background 35s linear infinite;
+                animation-duration: calc(300s / var(--i));
             }
     
-            //span:nth-child(even){
-            //    background: #ff2d75;
-            //    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
-            //}
+            span:nth-child(even){
+                //background: #ff2d75;
+                //box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+                background: #fff;
+                box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
+            }
         }
     
     }
@@ -423,7 +425,7 @@ section.imprint{
         }
         100%
         {
-            transform: translateY(-10vh) scale(1);
+            transform: translateY(-20vh) scale(0.7);
         }
     }
 

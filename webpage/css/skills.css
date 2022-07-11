@@ -439,15 +439,20 @@ section.imprint ul a {
     position: relative;
     width: 15px;
     height: 15px;
-    background: #ff9933;
+    background: #fff;
     margin: 0 4px;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 10px #4e360044, 0 0 50px #ff9933, 0 0 100px #ff9933;
-            box-shadow: 0 0 0 10px #4e360044, 0 0 50px #ff9933, 0 0 100px #ff9933;
-    -webkit-animation: animate_background 15s linear infinite;
-            animation: animate_background 15s linear infinite;
-    -webkit-animation-duration: calc(200s / var(--i));
-            animation-duration: calc(200s / var(--i));
+    -webkit-box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
+            box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
+    -webkit-animation: animate_background 35s linear infinite;
+            animation: animate_background 35s linear infinite;
+    -webkit-animation-duration: calc(300s / var(--i));
+            animation-duration: calc(300s / var(--i));
+  }
+  .background .bubbles span:nth-child(even) {
+    background: #fff;
+    -webkit-box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
+            box-shadow: 0 0 0 10px #3C3C3C, 0 0 50px #fff, 0 0 100px #fff;
   }
   @-webkit-keyframes animate_background {
     0% {
@@ -455,8 +460,8 @@ section.imprint ul a {
               transform: translateY(100vh) scale(0);
     }
     100% {
-      -webkit-transform: translateY(-10vh) scale(1);
-              transform: translateY(-10vh) scale(1);
+      -webkit-transform: translateY(-20vh) scale(0.7);
+              transform: translateY(-20vh) scale(0.7);
     }
   }
   @keyframes animate_background {
@@ -465,8 +470,8 @@ section.imprint ul a {
               transform: translateY(100vh) scale(0);
     }
     100% {
-      -webkit-transform: translateY(-10vh) scale(1);
-              transform: translateY(-10vh) scale(1);
+      -webkit-transform: translateY(-20vh) scale(0.7);
+              transform: translateY(-20vh) scale(0.7);
     }
   }
   div.cards {
