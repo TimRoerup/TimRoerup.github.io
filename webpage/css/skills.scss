@@ -97,7 +97,7 @@ section.languages {
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         border-right: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(8px);
         padding: 20px 10px 20px 10px;
         height: 380px;
         width: 220px;
@@ -174,7 +174,7 @@ section.skills {
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         border-right: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(8px);
         padding: 20px 10px 20px 10px;
         height: 380px;
         width: 220px;
@@ -254,7 +254,7 @@ section.frameworks {
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         border-right: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(8px);
         padding: 20px 10px 20px 10px;
         height: 380px;
         width: 220px;
@@ -383,9 +383,53 @@ section.imprint{
         }
     }
 
+    .background{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    
+        .bubbles{
+            margin: 0em 2em;
+            position: relative;
+            display: flex;
+            //z-index: -100000;
+    
+            span{
+                position: relative;
+                width: 15px;
+                height: 15px;
+                background: #ff9933;
+                margin: 0 4px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px #4e360044, 0 0 50px #ff9933, 0 0 100px #ff9933;
+                animation: animate_background 15s linear infinite;
+                animation-duration: calc(200s / var(--i));
+            }
+    
+            //span:nth-child(even){
+            //    background: #ff2d75;
+            //    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+            //}
+        }
+    
+    }
+    
+    @keyframes animate_background
+    {
+        0%
+        {
+            transform: translateY(100vh) scale(0);
+        }
+        100%
+        {
+            transform: translateY(-10vh) scale(1);
+        }
+    }
+
+
     div.cards{
         display: flex;
-        //height: auto;
         justify-content: space-around;
 
         section{
